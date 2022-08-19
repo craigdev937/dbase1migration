@@ -4,8 +4,12 @@ import express from "express";
 import helmet from "helmet";
 import logger from "morgan";
 import { userRt } from "./routes/userRt";
+import { dBase } from "./data/DataSource";
 
 (async () => {
+    await dBase.initialize()
+        .then(() => console.log("PostgreSQL initialized!"))
+        .catch((error) => console.log(error));
     const app: express.Application = express();
     app.use(helmet());
 
