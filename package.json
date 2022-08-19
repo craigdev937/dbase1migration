@@ -1,0 +1,46 @@
+{
+  "name": "dbase1migration",
+  "version": "1.0.0",
+  "description": "Initial setup of the project.  Created with Express, TypeScript, PostgreSQL, and TypeORM.",
+  "main": "index.ts",
+  "engines": {
+    "node": "18.x",
+    "npx": "8.x"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "pro": "tsc && node dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigomx9/dbase1migration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indigomx9/dbase1migration/issues"
+  },
+  "homepage": "https://github.com/indigomx9/dbase1migration#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.6",
+    "@types/pg": "^8.6.5",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
+
+
